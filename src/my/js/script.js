@@ -87,8 +87,8 @@ $(document).ready(function () {
         Size();
     });
 
-    /*for (n = 0; n < 20; n++)
-        Loading();*/
+    for (n = 0; n < 20; n++)
+        Loading();
 
     function Size() {
         if (992 <= body.width()) {
