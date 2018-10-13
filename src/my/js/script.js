@@ -92,6 +92,7 @@ $(document).ready(function () {
     function Size() {
         if (992 <= body.width()) {
             Loading();
+            Loading();
         } else if (1200 <= body.width()) {
             Loading();
             Loading();
