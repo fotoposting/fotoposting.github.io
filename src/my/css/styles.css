@@ -1,0 +1,231 @@
+/*::-webkit-scrollbar{
+  display: none;
+}*/
+/*.parallax-mirror{
+ //filter: blur(12px);
+ //filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='12');
+}*/
+[class*='parallax-window'] {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.h1-nm {
+  font-size: 2.5rem;
+}
+
+.h2-nm {
+  font-size: 2rem;
+}
+
+.h3-nm {
+  font-size: 1.75rem;
+}
+
+.h4-nm {
+  font-size: 1.5rem;
+}
+
+.h5-nm {
+  font-size: 1.25rem;
+}
+
+.h6-nm {
+  font-size: 1rem;
+}
+
+#player {
+  width: 300px;
+  height: 152px;
+}
+
+@media (min-width: 352px) {
+  #player {
+    width: 352px;
+    height: 182px;
+  }
+  .h1-mm {
+    font-size: 2.5rem;
+  }
+  .h2-mm {
+    font-size: 2rem;
+  }
+  .h3-mm {
+    font-size: 1.75rem;
+  }
+  .h4-mm {
+    font-size: 1.5rem;
+  }
+  .h5-mm {
+    font-size: 1.25rem;
+  }
+  .h6-mm {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #player {
+    width: 576px;
+    height: 308px;
+  }
+  .h1-sm {
+    font-size: 2.5rem;
+  }
+  .h2-sm {
+    font-size: 2rem;
+  }
+  .h3-sm {
+    font-size: 1.75rem;
+  }
+  .h4-sm {
+    font-size: 1.5rem;
+  }
+  .h5-sm {
+    font-size: 1.25rem;
+  }
+  .h6-sm {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #player {
+    width: 768px;
+    height: 416px;
+  }
+  .h1-md {
+    font-size: 2.5rem;
+  }
+  .h2-md {
+    font-size: 2rem;
+  }
+  .h3-md {
+    font-size: 1.75rem;
+  }
+  .h4-md {
+    font-size: 1.5rem;
+  }
+  .h5-md {
+    font-size: 1.25rem;
+  }
+  .h6-md {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #player {
+    width: 992px;
+    height: 545px;
+  }
+  .h1-lg {
+    font-size: 2.5rem;
+  }
+  .h2-lg {
+    font-size: 2rem;
+  }
+  .h3-lg {
+    font-size: 1.75rem;
+  }
+  .h4-lg {
+    font-size: 1.5rem;
+  }
+  .h5-lg {
+    font-size: 1.25rem;
+  }
+  .h6-lg {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #player {
+    width: 1200px;
+    height: 660px;
+  }
+  .h1-xl {
+    font-size: 2.5rem;
+  }
+  .h2-xl {
+    font-size: 2rem;
+  }
+  .h3-xl {
+    font-size: 1.75rem;
+  }
+  .h4-xl {
+    font-size: 1.5rem;
+  }
+  .h5-xl {
+    font-size: 1.25rem;
+  }
+  .h6-xl {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .parallax-window-1 {
+    background-image: url("/src/my/img/1_3.jpg");
+  }
+  .parallax-window-2 {
+    background-image: url("/src/my/img/2_3.jpg");
+  }
+  .parallax-window-3 {
+    background-image: url("/src/my/img/3_3.jpg");
+  }
+  .parallax-window-4 {
+    background-image: url("/src/my/img/4_3.jpg");
+  }
+  .parallax-window-5 {
+    background-image: url("/src/my/img/5_3.jpg");
+  }
+  .parallax-window-6 {
+    background-image: url("/src/my/img/6_3.jpg");
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+  .parallax-window-1 {
+    background-image: url("/src/my/img/1_2.jpg");
+  }
+  .parallax-window-2 {
+    background-image: url("/src/my/img/2_2.jpg");
+  }
+  .parallax-window-3 {
+    background-image: url("/src/my/img/3_2.jpg");
+  }
+  .parallax-window-4 {
+    background-image: url("/src/my/img/4_2.jpg");
+  }
+  .parallax-window-5 {
+    background-image: url("/src/my/img/5_2.jpg");
+  }
+  .parallax-window-6 {
+    background-image: url("/src/my/img/6_2.jpg");
+  }
+}
+
+@media (min-width: 1080px) {
+  .parallax-window-1 {
+    background-image: url("/src/my/img/1_1.jpg");
+  }
+  .parallax-window-2 {
+    background-image: url("/src/my/img/2_1.jpg");
+  }
+  .parallax-window-3 {
+    background-image: url("/src/my/img/3_1.jpg");
+  }
+  .parallax-window-4 {
+    background-image: url("/src/my/img/4_1.jpg");
+  }
+  .parallax-window-5 {
+    background-image: url("/src/my/img/5_1.jpg");
+  }
+  .parallax-window-6 {
+    background-image: url("/src/my/img/6_1.jpg");
+  }
+}
+/*# sourceMappingURL=styles.css.map */

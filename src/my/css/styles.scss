@@ -1,0 +1,126 @@
+* {
+  //box-shadow: black 0 0px 1px 1px;
+  //user-select: none;
+}
+
+/*::-webkit-scrollbar{
+  display: none;
+}*/
+
+/*.parallax-mirror{
+ //filter: blur(12px);
+ //filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='12');
+}*/
+
+[class*='parallax-window']{
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;  
+}
+
+
+@mixin shadow() {
+  //text-shadow: 1px 1px 2px black;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  @include shadow();
+}
+
+@mixin img($selector) {
+  @for $i from 1 through 6 {
+    .parallax-window-#{$i}{
+      background-image: url('/src/my/img/#{$i}_#{$selector}.jpg');
+    }
+  }
+}
+
+@mixin he($selector) {
+  .h1-#{$selector}, .h2-#{$selector}, .h3-#{$selector}, .h4-#{$selector}, .h5-#{$selector}, .h6-#{$selector} {
+    @include shadow();
+  }
+
+  .h1-#{$selector} {
+    font-size: 2.5rem;
+  }
+  
+  .h2-#{$selector} {
+    font-size: 2rem;
+  }
+  
+  .h3-#{$selector} {
+    font-size: 1.75rem;
+  }
+  
+  .h4-#{$selector} {
+    font-size: 1.5rem;
+  }
+  
+  .h5-#{$selector} {
+    font-size: 1.25rem;
+  }
+  
+  .h6-#{$selector} {
+    font-size: 1rem;
+  }
+}
+
+@include he("nm");
+
+#player{
+  width: 300px;
+  height: 152px;
+}
+
+@media (min-width: 352px) {
+  #player{
+    width: 352px;
+    height: 182px;
+  }
+  @include he("mm");
+}
+
+@media (min-width: 576px) { 
+  #player{
+    width: 576px;
+    height: 308px;
+  }
+  @include he("sm");
+}
+
+@media (min-width: 768px) {
+  #player{
+    width: 768px;
+    height: 416px;
+  }
+  @include he("md");
+}
+
+@media (min-width: 992px) {
+  #player{
+    width: 992px;
+    height: 545px;
+  }
+  @include he("lg");
+}
+
+@media (min-width: 1200px) {  
+  #player{
+    width: 1200px;
+    height: 660px;
+  }
+  @include he("xl");
+}
+
+@media (max-width: 720px) {  
+  @include img("3");//480
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {  
+  @include img("2");//720
+}
+
+@media (min-width: 1080px) {  
+  @include img("1");//1080
+}
