@@ -79,6 +79,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ((($(window).scrollTop() + $(window).height() + 250)) >= $(document).height()) {
             Loading();
+            Loading();
         }
     });
 
@@ -91,7 +92,6 @@ $(document).ready(function () {
 
     function Size() {
         if (992 <= body.width()) {
-            Loading();
             Loading();
         } else if (1200 <= body.width()) {
             Loading();
