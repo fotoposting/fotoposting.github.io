@@ -1,7 +1,7 @@
-* {
+/* {
   //box-shadow: black 0 0px 1px 1px;
   //user-select: none;
-}
+}*/
 
 /*::-webkit-scrollbar{
   display: none;
@@ -91,8 +91,8 @@
 
 @media (min-width: 768px) {
   #player{
-    width: 768px;
-    height: 416px;
+    width: 753px;
+    height: 407px;
   }
   @include he("md");
 }
@@ -108,7 +108,7 @@
 @media (min-width: 1200px) {  
   #player{
     width: 1200px;
-    height: 660px;
+    height: 658px;
   }
   @include he("xl");
 }
